@@ -1,0 +1,17 @@
+# Exercício 4: Serviço de Tradução com Sockets UNIX
+
+## Descrição
+Implementação de um sistema cliente-servidor para tradução de palavras simples (pt-en) utilizando Sockets UNIX[cite: 50, 51, 54].
+O servidor delega o processamento de cada cliente para um processo filho (via fork), permitindo múltiplas conexões simultâneas[cite: 54, 57].
+
+## Como Compilar
+No terminal, dentro desta pasta, execute o comando:
+$ make
+
+## Como Executar
+1. Primeiro, inicie o servidor:
+   $ ./servidor
+2. Em outro terminal, execute o cliente:
+   $ ./cliente
+
+Envie palavras no formato 'pt-en:palavra' (Ex: pt-en:cachorro). Para encerrar a conexão do cliente, envie o código 'NO-NO'[cite: 51, 54].

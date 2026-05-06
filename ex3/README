@@ -1,0 +1,16 @@
+# Exercício 3: Soma de Vetores com Memória Compartilhada e Pipes
+
+## Descrição
+Este programa realiza a soma de dois vetores utilizando múltiplos processos filhos[cite: 23]. 
+O fluxo segue a seguinte lógica:
+1. O processo pai aloca memória compartilhada (SHM) para os vetores e para a sinalização de término[cite: 38, 39, 40].
+2. O pai utiliza Pipes para despachar os intervalos de índices que cada filho deve processar[cite: 25, 42].
+3. Os filhos realizam o cálculo na SHM e sinalizam o término ao pai[cite: 43, 44, 48].
+
+## Como Compilar
+No terminal, dentro desta pasta, execute o comando:
+$ make
+
+## Como Executar
+Execute o binário e informe o número de elementos e a quantidade de processos desejada:
+$ ./soma_vetores
