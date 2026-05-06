@@ -1,0 +1,15 @@
+# Exercício 2: Manipulação de Sinais (Graceful Stop)
+
+## Descrição
+Este programa demonstra o tratamento de sinais UNIX para uma finalização limpa (graceful stop)[cite: 18].
+Ao receber os sinais SIGINT (Ctrl+C) ou SIGTERM (signal 15), o programa garante que os arquivos abertos sejam fechados corretamente e que os dados pendentes sejam gravados antes do encerramento[cite: 18].
+
+## Como Compilar
+No terminal, dentro desta pasta, execute o comando:
+$ make
+
+## Como Executar
+Execute o binário gerado:
+$ ./ex2_sinais
+
+O programa ficará em loop simulando a escrita em um arquivo. Para testar o sinal, pressione Ctrl+C no terminal. Verifique o arquivo 'log.txt' gerado para confirmar a finalização correta.

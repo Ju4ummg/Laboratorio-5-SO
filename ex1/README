@@ -1,0 +1,17 @@
+# Exercício 1: Comunicação entre Processos via FIFO
+
+## Descrição
+Este programa consiste em dois processos (Escritor e Leitor) que se comunicam através de um Pipe Nomeado (FIFO)[cite: 12].
+O Escritor envia strings para o Leitor, que por sua vez realiza a análise da string contando o tamanho, número de vogais, consoantes e espaços[cite: 13].
+
+## Como Compilar
+No terminal, dentro desta pasta, execute o comando:
+$ make
+
+## Como Executar
+1. Em um terminal, inicie o leitor (que criará o FIFO e aguardará dados):
+   $ ./leitor
+2. Em outro terminal, execute o escritor para enviar mensagens:
+   $ ./escritor
+
+Para encerrar, envie a palavra "sair" através do escritor.
